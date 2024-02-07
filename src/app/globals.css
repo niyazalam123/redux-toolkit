@@ -1,0 +1,74 @@
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+._Parent {
+    max-width: 600px;
+    margin: 20px auto;
+    width: 100%;
+    box-shadow: 0 0 4px -2px #333;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #44d;
+  }
+  ._add1 {
+    border-bottom: 1px solid #44d;
+    padding: 0px 0px 15px;
+  }
+  ._add1 > h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #44d;
+  }
+  ._add2 > input {
+    border: 1px solid #44d;
+    width: 70%;
+    padding: 6px 12px;
+    height: 42px;
+    border-radius: 6px;
+    margin-right: 12px;
+  }
+  ._add2 > button {
+    background: #44d;
+    border: none;
+    width: 22%;
+    color: #fff;
+    padding: 6px;
+    height: 42px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  ._us1 > h3 {
+    color: #44d;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  ._us2{
+    list-style-type: none;
+  }
+
+  ._us2 > li:nth-child(2n+1) {
+    background: #44d;
+    padding: 8px 12px;
+    border-radius: 3px;
+    color:#fff;
+  }
+  ._us2 > li:nth-child(2n) {
+    background: gray;
+    padding: 8px 12px;
+    border-radius: 3px;
+    color:#fff;
+  }
+  ._us1 {
+    padding-top: 12px;
+  }
+  ._us2 {
+    list-style-type: none;
+    margin-top: 10px;
+    border: 1px solid #333;
+    padding: 6px;
+    border-radius: 3px;
+  }

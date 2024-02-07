@@ -1,9 +1,14 @@
-import styles from "./page.module.css";
+import AddUsers from "@/app/components/AddUsers";
+import UserList from "@/app/components/UserList"
+
 
 export default function Home() {
   return (
     <>
-    hello world
+      <div className="_Parent">
+        <AddUsers />
+        <UserList />
+      </div>
     </>
   );
 }

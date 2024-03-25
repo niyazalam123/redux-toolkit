@@ -1,23 +1,29 @@
 "use client";
 import React from 'react';
-import { useSelector } from 'react-redux';
-
+import { useDispatch, useSelector } from 'react-redux';
+import {removeUser} from "@/app/reduxtoolkit/Slice"
 
 
 const UserList = () => {
-  const userData = useSelector((data)=>data.users);
+  const userAllData = useSelector((data)=>data.usersData.usersData);
+  const dispatch = useDispatch();
   return (
     <>
-    <div className='_us1'>
+      <div className='_us1'>
         <h3>User Lists</h3>
         <ul className='_us2'>
-          {
-            userData.map((items)=>(
-              <li key={items.id}>{items.name}</li>
-            ))
-          }
+          <div className='_gfbca'>
+            {
+              userAllData?.map((items)=>(
+                <div key={items.id}>
+                  <li>{items.name}</li>
+                  <button onClick={()=>dispatch(removeUser(items.id))}>Remove</button>
+                </div>
+              ))
+            }
+          </div>
         </ul>
-    </div>
+      </div>
     </>
   )
 }

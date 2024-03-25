@@ -46,17 +46,15 @@
     font-size: 22px;
     font-weight: 600;
   }
-  ._us2{
-    list-style-type: none;
-  }
+ 
 
-  ._us2 > li:nth-child(2n+1) {
+  ._us2  li:nth-child(2n+1) {
     background: #44d;
     padding: 8px 12px;
     border-radius: 3px;
     color:#fff;
   }
-  ._us2 > li:nth-child(2n) {
+  ._us2  li:nth-child(2n) {
     background: gray;
     padding: 8px 12px;
     border-radius: 3px;
@@ -65,10 +63,30 @@
   ._us1 {
     padding-top: 12px;
   }
+  ._us2  li{
+    margin-bottom: 12px;
+  }
   ._us2 {
     list-style-type: none;
     margin-top: 10px;
     border: 1px solid #333;
     padding: 6px;
     border-radius: 3px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  ._gfbca {
+    position: relative;
+  }
+  ._gfbca button {
+    position: absolute;
+    right: 11px;
+    top: 2.5px;
+    background: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
   }
